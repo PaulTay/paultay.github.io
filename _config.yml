@@ -31,6 +31,7 @@ github_username:  elepaul
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jemoji
 google_analytics:
 
 # Exclude from processing.
