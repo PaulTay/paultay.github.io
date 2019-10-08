@@ -341,14 +341,14 @@ a {
   ul,
   ol {
     margin-top: 0;
+    counter-reset: a;
   }
 
   ol {
-    counter-reset: a;
     list-style-type: none;
     padding-left: 0;
 
-    li {
+    >li {
       padding-left: 40px;
       position: relative;
 
@@ -362,6 +362,12 @@ a {
         content: counter(a,decimal-leading-zero) ".";
         display: inline-block;
         width: 35px;
+      }
+    }
+
+    &.big {
+      li:before {
+        top: .8em;
       }
     }
   }
