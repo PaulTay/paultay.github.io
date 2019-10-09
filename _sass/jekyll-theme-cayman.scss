@@ -3,7 +3,7 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -40,12 +40,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
-
-  &.home {
-    & .page-header {
-      min-height: 100%;
-    }
-  }
 }
 
 #skip-to-content {
@@ -141,6 +135,7 @@ a {
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  font-family: "Mansalva", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   @include large {
     padding: 5rem 6rem;
@@ -299,6 +294,16 @@ a {
       background: transparent;
       border: 0;
     }
+  }
+
+  .intro {
+    background: #ff6f31;
+    background: -moz-linear-gradient(left,rgba(230, 174, 48, 1) 0%,rgba(216, 77, 148, 1) 20%);
+    background: -webkit-linear-gradient(left,rgba(230, 174, 48, 1) 0%,rgba(216, 77, 148, 1) 20%);
+    background: linear-gradient(to right,rgba(230, 174, 48, 1) 0%,rgba(216, 77, 148, 1) 20%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6f31',endColorstr='#f28d38',GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .highlight {
